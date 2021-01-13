@@ -3,13 +3,22 @@ var search = document.getElementById('searchbar')
 function clickfunction(){
   
    var ritik = document.createElement('li')
+   ritik.id = 'new'
    ritik.className = 'list-element'
-   ritik.innerHTML = '<p>'+search.value+'</p><i class="fa fa-minus-square" aria-hidden="true"></i>'
-   console.log(ritik)
+   ritik.innerHTML = '<p>'+search.value+'</p><i class="fa fa-minus-square" id="icon" aria-hidden="true"></i>'
    var ul = document.getElementById('list');
    var li = document.getElementById('ritu');
    ul.insertBefore(ritik,li);
+   console.log(ritik);
+   var removeAdded = document.getElementById('icon').addEventListener('click',newfriend)
+
+
+function newfriend(){
+   var newadded = document.getElementById('new')
+   newadded.remove();
+}
 }   
+
 
 
 var toremove = document.getElementById('tomar').addEventListener('click',removefunction)
@@ -26,9 +35,30 @@ function removebhanu(){
    var bhwna = document.getElementById('bhanu')
    bhwna.remove();
 }
-//var rm = document.getElementsByClassName('fa-minus-square').addEventListener('click',rmv)
+var toRemove = document.getElementById('gupta').addEventListener('click',removeFunction)
 
-//function rmv(){
-//   var list = document.getElementsByTagName('li')
-//  console.log(list)
+
+function removeFunction(){
+   var avnti = document.getElementById('avnti')
+   avnti.remove();
+}
+var Remove = document.getElementById('yadav').addEventListener('click',removeyadav)
+
+function removeyadav(){
+   var rnjit = document.getElementById('rnjit')
+  rnjit.remove();
+}
+
+//var removeAdded = document.getElementById('icon').addEventListener('click',newfriend)
+
+//function newfriend(){
+ //  var newadded = document.getElementById('new');
+ //  newadded.remove();
 //}
+var removeAdded = document.getElementById('icon').addEventListener('click',newfriend)
+
+
+function newfriend(){
+   var newadded = document.getElementById('new')
+   newadded.remove();
+}
