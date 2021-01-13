@@ -10,6 +10,7 @@ function clickfunction(){
    var li = document.getElementById('ritu');
    ul.insertBefore(ritik,li);
    console.log(ritik);
+   search.value=''
    var removeAdded = document.getElementById('icon').addEventListener('click',newfriend)
 
 
