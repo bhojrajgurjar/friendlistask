@@ -4,12 +4,17 @@ var button = document.getElementById('button');
 console.log("todolist")
 let todolist = [];
 button.addEventListener('click', function (e) {
-    var special = document.getElementById('spcial')
-    special.style.display = 'inherit';
-    e.preventDefault()
+   if(input.value == ""){
+       return alert(" ENTER FRIEND NAME ")
+   }
+   var special = document.getElementById('spcial')
+   special.style.display = 'inherit';
+    e.preventDefault
     addTOlist();
+    input.value=null;
 });
 function addTOlist(e) {
+   
 
     const newToDo = input.value;
 
